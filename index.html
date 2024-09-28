@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zcoin App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- User Profile -->
+        <div class="profile">
+            <img src="user-avatar.png" alt="User Avatar" class="avatar">
+            <div>
+                <p class="username">Zcoin Miner</p>
+                <p class="level">Level 1</p>
+            </div>
+        </div>
+
+        <!-- Crypto Balance and Power -->
+        <div class="balance-section">
+            <div class="balance">
+                <p>Crypto Balance: <span id="cryptoBalance">0.00000001 BTC</span></p>
+                <p>Power: <span id="power">500 ZXP</span></p>
+                <p>Mining per hour: <span id="miningRate">0.00000005 BTC</span></p>
+            </div>
+            <button id="boostBtn">Boost</button>
+        </div>
+
+        <!-- Tap Button -->
+        <div class="tap-section">
+            <p>10.00 Zcoins</p>
+            <button id="tapButton">Start Mining</button>
+        </div>
+
+        <!-- Action Bar -->
+        <div class="action-bar">
+            <button class="action-btn" id="workBtn">Work</button>
+            <button class="action-btn" id="mineBtn">Mine</button>
+            <button class="action-btn" id="tasksBtn">Tasks</button>
+            <button class="action-btn" id="squadBtn">Squad</button>
+            <button class="action-btn" id="convertBtn">Convert</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
